@@ -3,9 +3,9 @@ const cheerio = require('cheerio');
 
 const liste_chef = require('./liste_chef');
 const scrap = require('./scrap');
-const prix = require('./liste_des_prix');
-var fs = require('fs');
+const liste_prix = require('./liste_des_prix');
 
+//retourne la liste des chefs des restaurants étoilés identifiés dans relais et chateaux 
 const url = 'https://www.relaischateaux.com/fr/site-map/etablissements';
 
 
