@@ -1,7 +1,8 @@
-//const request = require('request-promise');
-const request = require('request');
+const request = require('request-promise');
+//const request = require('request');
 const cheerio = require('cheerio');
-//const liste_des_url_m = require ('./liste_des_url_m')
+//retourne la liste des pages michelin
+//const liste_des_url_m = require ('./liste_des_url_m');
 {
 	//if(!error && response.statusCode==200)
 	{
@@ -68,5 +69,6 @@ const cheerio = require('cheerio');
     })*/
 }
 console.log('fini');
+return url_restos_michelin;
 }
 ;
