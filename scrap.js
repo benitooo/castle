@@ -18,14 +18,17 @@ request('https://www.relaischateaux.com/fr/site-map/etablissements?fbclid=IwAR1N
 				{
 					if(k==0)
 					{
-					tableau.push($(this).filter("a").text().trim());
-					console.log($(this).filter("a").text().trim());
+					tableau.push($(this).filter("a").next().text().trim());
+					console.log($(this).filter("a").next().text().trim());
 					}
 				}
 				)}
 			)}
 	}
-	)}
+	
+		)
+		return tableau;
+	}
 });
 
 
